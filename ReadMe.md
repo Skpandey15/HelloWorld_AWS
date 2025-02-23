@@ -107,3 +107,22 @@ Use eb logs to diagnose any issues. The logs (especially /var/log/eb-engine.log)
 
 Match Java Versions:
 Ensure your local build (using Java 17 as specified in your pom.xml) matches the runtime environment in AWS Elastic Beanstalk.
+
+
+C:\Users\skp4j\IdeaProjects\Shopping-cart\HelloWorld_AWS>git commit -m "Include application.jar for deployment"
+[master 9b30535] Include application.jar for deployment
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 application.jar
+
+C:\Users\skp4j\IdeaProjects\Shopping-cart\HelloWorld_AWS>eb deploy
+Creating application version archive "app-9b30-250223_183155696456".
+Uploading: [##################################################] 100% Done...
+2025-02-23 13:02:02    INFO    Environment update is starting.
+2025-02-23 13:02:06    INFO    Deploying new version to instance(s).
+2025-02-23 13:02:10    INFO    Instance deployment used the commands in your 'Procfile' to initiate startup of your application.
+2025-02-23 13:02:16    INFO    Instance deployment completed successfully.
+2025-02-23 13:02:19    INFO    New application version was deployed to running EC2 instances.
+2025-02-23 13:02:19    INFO    Environment update completed successfully.
+
+
+C:\Users\skp4j\IdeaProjects\Shopping-cart\HelloWorld_AWS>eb open
